@@ -1,0 +1,15 @@
+{
+	"prod": [{
+		"Plant": "M14",
+		"Week": "Week 15",
+		"Amount": "20k"
+	}, {
+		"Plant": "M13",
+		"Week": "Week 13",
+		"Amount": "22k"
+	}, {
+		"Plant": "M15",
+		"Week": "Week 14",
+		"Amount": "20k"
+	}]
+}

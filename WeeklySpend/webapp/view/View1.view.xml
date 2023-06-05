@@ -1,0 +1,46 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" controllerName="ApiWeeklySpend.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			
+			<Page title="{i18n>title}">
+				<content>
+					<Table id="Tab1" headerText="{i18n>tab_hdr_text}" items="{mprod>/prod}">
+						<columns>
+							<Column>	<Text text="{i18n>Plant}"/></Column>
+							
+							
+						<Column><Text text="{i18n>Week}"/></Column>	
+						<Column><Text text="{i18n>Amount}"/></Column>		
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+										<Text text="{mprod>Plant}"/>
+										<Text text="{mprod>Week}"/>
+										<Text text="{mprod>Plant}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					
+					<Button text="Export" width="100px" id="__button0" icon="sap-icon://download" press="onExport"/>
+					
+					<Button text="Asort" width="100px" id="__button1" icon="sap-icon://sort-ascending"/>
+					
+					<Button text="Dsort" width="100px" id="__button2" icon="sap-icon://sort-descending"/>
+					
+					<!---<f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout" title="Form Title">
+						<f:content>
+							<Label text="Plant"/>
+							<Input value="{Model>WERKS}"/>
+							<Label text="Week"/>
+							<Input value="{Model>WEEKTXT}"/>
+							<Label text="Amount"/>
+							<Input value="{Model>AMOUNT}"/>
+						</f:content>
+					</f:SimpleForm>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
